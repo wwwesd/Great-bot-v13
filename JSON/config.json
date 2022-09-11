@@ -1,0 +1,18 @@
+{
+    "TOKEN": "OTcxODAzOTA2NTIwNzgwODUw.G7ZVbk.qEAMNP--0dRSe308nra-152f1RTYtbSp3YOft8",
+    "PREFIX": "#",
+    "ownerID": ["719915319602184285"],
+    "chat": {
+        "url": "http://api.brainshop.ai/get?bid=155777&key=O0Rla6COZJ8XSGPJ&uid=[uid]&msg=[msg]",
+        "bid": "155777",
+        "key": "O0Rla6COZJ8XSGPJ",
+        "uid": "nothing."
+    },
+    "bid": "874338511464046622",
+
+"api": "AIzaSyAAg3GHxipuyDz7KsCAv434yoFT56TR9LQ",
+"youtubeAPI": "AIzaSyAAg3GHxipuyDz7KsCAv434yoFT56TR9LQ",
+"server": "837392745081471046",
+"mainprefix": "#",
+    "COOLDOWN": 5000
+}
