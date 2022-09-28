@@ -22,7 +22,7 @@ module.exports = {
       let embed = new MessageEmbed()
       .setTitle(`Channel Hide`)
       .setDescription(`Done hide ${channel}`)
-      .setColor('WHITE')
+      .setColor('GREY')
       message.channel.send({embeds : [embed]})
     
   

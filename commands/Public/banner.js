@@ -7,7 +7,7 @@ module.exports = {
     execute(client, message, args) {
         
  const member = message.mentions.users.first() || message.guild.members.cache.get(args[0]) || message.author;
- if (!member) return message.reply({ embeds: [new MessageEmbed().setDescription('You need to mention someone.').setColor('WHITE')] }); // لو مافي احد متمنشن
+ if (!member) return message.reply({ embeds: [new MessageEmbed().setDescription('You need to mention someone.').setColor('GREY')] }); // لو مافي احد متمنشن
         
         axios.get(`https://discord.com/api/users/${member.id}`, {
             headers: {
@@ -25,7 +25,7 @@ module.exports = {
                     .setFooter(`Requested by ${message.guild.members.cache.get(message.author.id).nickname || message.author.username} | ${moment().format("YYYY/M/D h:mm:ss A")}`, message.author.avatarURL())
                 message.reply({ embeds: [BannerEmbed] });
             } else {
-                return message.reply({ embeds: [new MessageEmbed().setDescription("The mentioned member doesn't have banner.").setColor('WHITE')] }); // لو ما عنده بنر
+                return message.reply({ embeds: [new MessageEmbed().setDescription("The mentioned member doesn't have banner.").setColor('GREY')] }); // لو ما عنده بنر
             }
         })    
 

@@ -7,7 +7,7 @@ module.exports = {
     const num = args[0];
 
       let embed = new MessageEmbed()
-      .setColor('WHITE')
+      .setColor('GREY')
       .setFields(
      {name:"Amount : ", value: `**${num}**`},
      {name:"Total with tax :  ", value:`**${probot.taxs(num)}**`}

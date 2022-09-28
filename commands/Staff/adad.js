@@ -12,7 +12,7 @@ module.exports = {
 
     let args = message.content.split(' ').slice(1);   
 
-    if (!args[0]) return message.reply({ embeds: [new MessageEmbed()  .setColor('WHITE')
+    if (!args[0]) return message.reply({ embeds: [new MessageEmbed()  .setColor('GREY')
         .setDescription(`**Command: role**\n\nAdd/remove a role(s) for a user.\n\n**Usage:**\n\n\+role\  \[user]\ \(+/-) [roles names separated by comma]\n\n \**Examples:**\n \+role <@${message.author.id}>`)] })
     
     let user = message.mentions.members.first();

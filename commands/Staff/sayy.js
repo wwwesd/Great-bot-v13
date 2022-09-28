@@ -9,9 +9,9 @@ var args = message.content.split(" ").slice(1);
   var msg = args.join(" ");
       
     let embed = new MessageEmbed()
-      .setColor("#9784c4")
+      .setColor("GREY")
       .setDescription(msg)
-      .setImage(``)
+      .setImage(`https://cdn.discordapp.com/attachments/991754431316115568/1007265964603224104/unknown-1.png`)
       .setThumbnail(message.guild.iconURL({ dynamic: true }))
     message.delete()
     message.channel.send({ embeds: [embed]

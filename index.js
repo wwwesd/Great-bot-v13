@@ -65,8 +65,7 @@ client.on("messageCreate", message => {
 
   
 
-  
-//welcome
+/*//welcome
 var { inviteTracker } = require("discord-inviter"), // npm i discord-inviter
   SLK = new inviteTracker(client);
 SLK.on('guildMemberAdd', async (SRAJ, inviter) => {
@@ -87,13 +86,13 @@ SLK.on('guildMemberAdd', async (SRAJ, inviter) => {
 })
 
 
-
+*/
 
 
 
 client.on('guildMemberAdd', member => {
   member.createDM().then(function (channel) {
-return channel.send("**حياك الله في سيرفر Brown واذا حسيت نفسك تحتاج مساعده تعال أسالنا هنا <#982212408531640330> !**")
+return channel.send("**حياك الله في سيرفر Great واذا حسيت نفسك تحتاج مساعده تعال أسالنا هنا <#982212408531640330> !**")
   }
   )});
 
@@ -280,34 +279,13 @@ client.on('messageCreate', message => {
              .setFooter(message.author.username , message.author.avatarURL({ dynamic: true }))
              .setThumbnail(message.guild.iconURL({dynamic:true}))
              .setTimestamp()
-             .setColor("#9784c4") 
+             .setColor("GREY") 
              
              message.channel.send({embeds: [embed]})
              }
              });
         
-             client.on("messageCreate" , message => {
-              const random = [
-               "**𝖲tatus Bot Online** ",
-            
-           
-               ] 
-           
-           var result = random[Math.floor(Math.random() * random.length)];
-           
-           if(message.content == prefix + "𝖲tatus") {
-            let embed = new MessageEmbed()
-           .setAuthor(`${message.guild.name}` , message.guild.iconURL({dynamic:true}))
-           .setTitle("𝖲tatus")
-           .setDescription(result)
-           .setFooter(message.author.username , message.author.avatarURL({ dynamic: true }))
-           .setThumbnail(message.guild.iconURL({dynamic:true}))
-           .setTimestamp()
-           .setColor("#9784c4") 
-           
-           message.channel.send({embeds: [embed]})
-           }
-           });
+          
 
   client.on("messageCreate" , message => {
       const random = [
@@ -334,7 +312,7 @@ client.on('messageCreate', message => {
    .setFooter(message.author.username , message.author.avatarURL({ dynamic: true }))
    .setThumbnail(message.guild.iconURL({dynamic:true}))
    .setTimestamp()
-   .setColor("#9784c4") 
+   .setColor("GREY") 
    
    message.channel.send({embeds: [embed]})
    }
@@ -347,13 +325,14 @@ client.on('messageCreate', message => {
         client.on('messageCreate', D7M => {
         if (D7M.author.bot) return;
         if(D7M.channel.id != rooom) return;   
-        D7M.channel.send({content : "https://cdn.discordapp.com/attachments/790515111752237067/980111928930230352/unknown.png"})
+        D7M.channel.send({content : "https://cdn.discordapp.com/attachments/790515111752237067/1007278477461958667/unknown-3.png"})
         })
-const chanenl13 = '988506229003415632'
+const chanenl13 = '982182727610695682'
 client.on('messageCreate', D7M => {
 if(D7M.channel.id != chanenl13) return; 
-D7M.channel.send({content : "https://cdn.discordapp.com/attachments/790515111752237067/980111928930230352/unknown.png"})
+D7M.channel.send({content : "https://cdn.discordapp.com/attachments/790515111752237067/1007278477461958667/unknown-3.png"})
 })
+/*
 
  client.on("message", message => {
       if(message.author.bot) return;
@@ -406,6 +385,7 @@ files: ["https://cdn.discordapp.com/attachments/790515111752237067/9801119289302
   }).catch(err => console.log(err))
 })  
      */
+/*
 client.on("messageCreate", async message => {
   if(message.author.bot) return;
   if(message.channel.id !== "982183524318715934") return; // Room
@@ -423,7 +403,7 @@ await message.delete()
 files: ["https://cdn.discordapp.com/attachments/790515111752237067/980111928930230352/unknown.png"] }) // line
   }).catch(err => console.log(err))
 })  
-     
+*/
  
 
 
@@ -439,7 +419,7 @@ client.on('message', Npg => {
     let roomNpg = client.channels.cache.get('982201958595190784')//////ايدي روم الوق 
     const { MessageEmbed } = require('discord.js'); // npm i discord.js
     let embedNpg = new MessageEmbed()
-  .setColor('#9784c4') // لون الامبد الي يجي باللوق
+  .setColor('GREY') // لون الامبد الي يجي باللوق
   .setFields(
   { name: 'تم اسكات :', value: `<@${Npg.author.id}>` },// الرسالة الي تجي باللوق
   { name: 'السبب:' , value: `**${Npg.content}**`}
@@ -590,10 +570,10 @@ client.on('messageCreate', function (message) {
         message.delete();
         const embed = new MessageEmbed()
             .setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
-            .setColor("#9784c4")
+            .setColor("GREY")
             .setThumbnail(message.author.avatarURL({ dynamic: true }))
             .setDescription(`${message.author}\n> **${args}**`)
-            .setFooter(`Weller Bot`)
+            .setFooter(`Great Bot`)
             .setTimestamp()
         message.channel.send({ embeds: [embed] }).then(msg => {
             msg.react('<a:928380639646994443:967488334484111390>')
@@ -611,10 +591,10 @@ client.on('messageCreate', function (message) {
       message.delete();
       const embed = new MessageEmbed()
           .setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
-          .setColor("#9784c4")
+          .setColor("GREY")
           .setThumbnail(message.author.avatarURL({ dynamic: true }))
           .setDescription(`${message.author}\n> **${args}**`)
-          .setFooter(`Weller Bot`)
+          .setFooter(`Great Bot`)
           .setTimestamp()
       message.channel.send({ embeds: [embed] }).then(msg => {
           msg.react('<a:928380639646994443:967488334484111390>')
@@ -632,10 +612,10 @@ client.on('messageCreate', function (message) {
       message.delete();
       const embed = new MessageEmbed()
           .setAuthor(message.author.tag, message.author.avatarURL({ dynamic: true }))
-          .setColor("#9784c4")
+          .setColor("GREY")
           .setThumbnail(message.author.avatarURL({ dynamic: true }))
           .setDescription(`${message.author}\n> **${args}**`)
-          .setFooter(`Weller Bot`)
+          .setFooter(`Great Bot`)
           .setTimestamp()
       message.channel.send({ embeds: [embed] }).then(msg => {
           msg.react('<a:928380639646994443:967488334484111390>')
@@ -649,7 +629,7 @@ client.on('messageCreate', message => {
     let target = message.mentions.users.first() || message.author;
         let member = message.guild.members.cache.get(target.id);
     let embed = new MessageEmbed()
-    .setColor('#9784c4')
+    .setColor('GREY')
     .setAuthor(member.user.id)
     .setFields(
       { name: 
@@ -685,7 +665,7 @@ client.on('messageCreate', message => {
           .addField("🔮:・Boost", `${boost}`)
           
           .addField("📋:・Level", `${level}`)
-          .setColor("#9784c4")
+          .setColor("GREY")
         message.channel.send({ embeds: [embed] })
       }
     });
@@ -707,7 +687,7 @@ client.on('messageCreate', message => {
     
     **وش راح تفيد السيرفر :**
     `)
-         .setColor("#9784c4")
+         .setColor("GREY")
          message.delete();
         message.channel.send({embeds:[embed]});
     }
@@ -746,7 +726,7 @@ client.on('messageCreate' , message =>{
   const args = message.content.slice(prefix.length).split(/ +/);
   const cmd = args.shift().toLowerCase()
   if(cmd == "xo") {
-    simplydjs.tictactoe(message, {xEmoji: '❌',oEmoji: '⭕',idleEmoji: '➖',embedColor: '#9784c4'})
+    simplydjs.tictactoe(message, {xEmoji: '❌',oEmoji: '⭕',idleEmoji: '➖',embedColor: 'GREY'})
     }
   })
 
@@ -790,7 +770,7 @@ client.on('messageCreate' , message =>{
           )
           .setDescription(`الطلب
           > **${ra3d22}**`, )
-          .setColor('#9784c4')
+          .setColor('GREY')
           .setThumbnail(Theo.author.displayAvatarURL({ dynamic: true }))
           .setTimestamp()
         await room.send(`طلب جديد من الاعضاء :`);   ////here
@@ -826,7 +806,7 @@ client.on('messageCreate' , message =>{
         .addField(`صاحب الروم:`, `${user}`, false)
         .addField(`منشأء الروم`,`${message.author}`,false)
         .addField(`ينتهي في: `,`${time[2]}`)
-        .setColor("#9784c4")
+        .setColor("GREY")
         nah.send({embeds:[embed]})
         nah.permissionOverwrites.create(user.id, { VIEW_CHANNEL: true, SEND_MESSAGES: true});
         nah.permissionOverwrites.edit(everyone, { VIEW_CHANNEL: true,SEND_MESSAGES: false }).then(setTimeout(() => {
@@ -890,7 +870,7 @@ client.on('messageCreate' , message =>{
             let embed = new MessageEmbed()
         
             .setDescription(`${pretty(client.uptime)}`)
-            .setColor("#9784c4")
+            .setColor("GREY")
             Theo.channel.send({ embeds: [embed]})
         
           }
@@ -915,7 +895,7 @@ client.on("messageCreate", (message) => {
    
     
     const embed = new MessageEmbed()
-      .setColor("#9784c4")
+      .setColor("GREY")
       .addField(`** - Users:**`, `${client.users.cache.size}`, true)
       .addField(`** - Channels:**`, `${client.channels.cache.size}`, true)
       .addField(`** - Servers**`, ` ${client.guilds.cache.size}`, true);
@@ -944,7 +924,7 @@ client.on('messageCreate', (message) => {
                   .addField(`Id: `, `${parsed.id}`, true)
                   .addField(`Extention: `, `${ex}`, true)
                   .setImage(url)
-                  .setColor('#9784c4')
+                  .setColor('GREY')
               message.channel.send({ embeds: [embed] })
           }
       }
@@ -958,7 +938,7 @@ client.on('messageCreate', (message) => {
       if (emojis.cache.size > 2048) return message.channel.send(`There are a lot of emojis.`)
       if(!message.member.permissions.has('ADMINISTRATOR')) return message.reply('  يحليلك بس مسوي خوي ')
       var embed = new MessageEmbed()
-          .setColor('#9784c4')
+          .setColor('GREY')
           .setTimestamp()
           .setTitle(message.guild.name + '\'s Emojis list')
           .setThumbnail(message.guild.iconURL({ dynamic: true }) || message.author.avatarURL({ dynamic: true }))
@@ -985,7 +965,7 @@ client.on('message', message => {
           .addField(`Member with this role:`, `${role.members.size}`, true)
           .addField(`Role position:`, `${role.position}`, true)
           .addField(`Created at:`, `${role.createdAt}`, true)
-          .setColor('#9784c4')
+          .setColor('GREY')
 
       message.channel.send({ embeds: [embed] })
       
@@ -1001,7 +981,7 @@ client.on('messageCreate', async Theo => {
       if(!user) return Theo.channel.send('**منشن الشخص**')
       let e2 = new MessageEmbed()
       .setTitle('Hmmm.. You are so lonely 😔')
-      .setColor('#9784c4')
+      .setColor('GREY')
       .setFooter(Theo.guild.name, Theo.guild.iconURL({dynamic: true})) 
               .setImage('https://cdn.nekos.life/cuddle/cuddle_018.gif')
       .setTimestamp()
@@ -1020,7 +1000,7 @@ client.on('guildMemberAdd', async member => {
 
   let embed = new MessageEmbed()
   .setAuthor({name: member.guild.name, iconURL: member.guild.iconURL({dynamic: true})})
-  .setColor('WHITE')
+  .setColor('GREY')
   .setTitle('كيف عرفت السيرفر؟')
   .setTimestamp()
   .setFooter({text: member.user.tag, iconURL: member.user.avatarURL({dynamic: true})})
@@ -1031,11 +1011,11 @@ client.on('guildMemberAdd', async member => {
     .setLabel('👑عن طريق رابط السيرفر')
     .setCustomId('ser'),
     new MessageButton()
-    .setStyle('PRIMARY')
+    .setStyle('SECONDARY')
     .setLabel('💎عن طريق رابط صديق')
     .setCustomId('frd'),
     new MessageButton()
-    .setStyle('PRIMARY')
+    .setStyle('SECONDARY')
     .setLabel('اخر ❔')
     .setCustomId('owr'),
   )
@@ -1046,7 +1026,7 @@ client.on('guildMemberAdd', async member => {
 
  let em = new MessageEmbed()
  .setAuthor({name: member.guild.name, iconURL: member.guild.iconURL({dynamic: true})})
- .setColor('#9784c4')
+ .setColor('GREY')
  .setTimestamp()
  .setFooter({text: member.user.tag, iconURL: member.user.avatarURL({dynamic: true})})
 
@@ -1088,7 +1068,7 @@ client.on("messageCreate", message => {
   .setDescription(`> ${args}`)
   .setTimestamp()
   .setThumbnail(user.avatarURL({dynamic: true}))
-  .setColor('#9784c4')
+  .setColor('GREY')
   .setFooter(user.tag, user.avatarURL({dynamic: true}))
   c.send({content: `<@${user.id}> <a:917361731704090625:967492548979486841> `, embeds: [embedd]} )
   message.channel.send({ content: `تم الارسال`})
@@ -1106,7 +1086,7 @@ client.on("messageCreate", message => {
   .setImage(`${message.attachments.first().url}`)
   .setTimestamp()
   .setThumbnail(user.avatarURL({dynamic: true}))
-  .setColor('#9784c4')
+  .setColor('GREY')
   .setFooter(user.tag, user.avatarURL({dynamic: true}))
   c.send({content: `<@${user.id}> <a:917361731704090625:967492548979486841> `, embeds: [embedd]})
   message.channel.send({ content: `تم الارسال` })
@@ -1165,7 +1145,7 @@ client.on("messageCreate", async (message) => {
 
         let embed = new MessageEmbed()
             .setTitle(`${user.username}'s Avatar`)
-            .setColor("#9784c4")
+            .setColor("GREY")
             .setImage(user.displayAvatarURL({ dynamic: true, size: 1024 }))
             .setDescription(`Download Avatar Image At:\n**[png](${png}) | [jpg](${jpg}) | [gif](${gif}) | [webp](${webp})**` || `**[png](${png}) | [jpg](${jpg})**`)
             .setFooter(`Requested by: ${user.username}`, user.displayAvatarURL({ dynamic: true }))
@@ -1208,13 +1188,13 @@ client.on("messageCreate" , message => {
       let embed = new MessageEmbed()
       .setAuthor(message.author.username , message.author.displayAvatarURL())
       .setDescription(`> **You have warned in server : ${message.guild.name}**\n> **Reason : ${reason}**\n> **Warned by : <@${message.author.id}>**\n> **Warned at : ${moment(now).format("M/D/YYYY")}**`)
-                                .setColor("#9784c4")
+                                .setColor("GREY")
       .setThumbnail(message.guild.iconURL())
       .setFooter(user.username , user.displayAvatarURL())
       let embed2 = new MessageEmbed()
       .setAuthor(message.author.username , message.author.displayAvatarURL())
       .setTitle("**User were warned !**")
-                    .setColor("#9784c4")
+                    .setColor("GREY")
       .setDescription(`> **User : ${user}**\n> **Reason : ${reason}**\n> **Warned by : <@${message.author.id}>**\n> **Warned at : ${moment(now).format("M/D/YYYY")}**`)
       .setThumbnail(message.guild.iconURL())
       .setFooter(user.username , user.displayAvatarURL())
@@ -1236,7 +1216,7 @@ client.on("messageCreate" , message => {
       let embed = new MessageEmbed()
       .setAuthor(message.author.username , message.author.displayAvatarURL())
       .setDescription(`> **-This user have ${warns} warns**\n> **-Reason : ${reason}**\n> **-Warned by : <@!${warnedby}>**\n> **-Warned at : ${time}**`)
-                    .setColor("#9784c4")
+                    .setColor("GREY")
       .setThumbnail(message.guild.iconURL())
       .setFooter(message.guild.name , message.guild.iconURL())
       message.reply({embeds:[embed]})
@@ -1291,7 +1271,7 @@ client.on('messageCreate', async message => {
     .setTitle('New Modmaill')
     .setDescription(`من : <@${message.author.id}>`)
     .addField(`Message: `, `\n\n\`\`\`${message.content}\`\`\``)
-    .setColor('#9784c4')
+    .setColor('GREY')
     .setThumbnail(message.author.displayAvatarURL())
     log.send({
       embeds: [aziz]
@@ -1310,7 +1290,7 @@ client.on('messageCreate', message => {
       .setTitle(`${message.guild.name} bots`)
       .setDescription(`${arr.join(`\n`)}`)
       .setTimestamp()
-      .setColor("#9784c4")
+      .setColor("GREY")
     message.channel.send({embeds:[embed]});
   }
 }) 
@@ -1321,7 +1301,7 @@ client.on('messageCreate' , message => {
     let user = message.mentions.users.first() || client.users.cache.get(message.content.split(' ')[1])
     const ex = new MessageEmbed()
     .setTitle(`Command : Come`)
-    .setColor("#9784c4")
+    .setColor("GREY")
     .setDescription(`**Usage :**
 ${prefix}come <mention / ID>
 
@@ -1333,7 +1313,7 @@ ${prefix}come ${message.author.id}`)
     
       .setAuthor(`${user.tag}` , user.avatarURL())
       .setTitle(`New Call`)
-      .setColor("#9784c4")
+      .setColor("GREY")
     .setDescription(`
 Guild : \`${message.guild.name}\`
 Caller  : <@${message.author.id}> 
@@ -1353,8 +1333,8 @@ client.on("guildMemberAdd", member => {
   .setThumbnail(member.user.avatarURL())
   .setTitle(`has been join server`)
   .addField('👤  Now Members',`**[ ${member.guild.memberCount} ] ✅**`,true)
-  .setColor('#9784c4') 
-var channel = member.guild.channels.cache.find(e => e.id === "878769234874875926")
+  .setColor('GREY') 
+var channel = member.guild.channels.cache.find(e => e.id === "982203269386485800")
 if (!channel) return;
 channel.send({ embeds: [embed] });
 })  
@@ -1362,7 +1342,7 @@ channel.send({ embeds: [embed] });
 client.on("messageCreate", message => {
   if (message.content == prefix + 'support') {
     let embed = new MessageEmbed()
-    .setColor(`#9784c4`)
+    .setColor(`GREY`)
     .setTitle(`Support Server`)
     .setURL(`https://discord.gg/gYSerfs9B3`) 
     message.channel.send({ embeds: [embed] })
@@ -1373,7 +1353,7 @@ client.on("guildChannelTopicUpdate", (channel, oldTopic, newTopic) => {
   const LogChannel = client.channels.cache.get('982201318116556800'); // Replace with your channel id
   const TopicUpdate = new MessageEmbed()
       .setTitle('Topic Updated!')
-      .setColor('#9784c4')
+      .setColor('GREY')
       .setDescription(`${channel} Topic changed from **${oldTopic}** to **${newTopic}**`);
 
   return LogChannel.send({
@@ -1395,7 +1375,7 @@ client.on('messageCreate', async message => {
       slash_command: false,
       embed: {
         title: 'Snake Game',
-        color: "#9784c4",
+        color: "GREY",
         OverTitle: 'Game Over',
       },
       snake: { head: '🟢', body: '🟩', tail: '🟢' },
@@ -1419,7 +1399,7 @@ client.on('messageCreate', async message => {
 
       const embed = new MessageEmbed()
           .setTitle("Top Invites")
-          .setColor("#9784c4")
+          .setColor("GREY")
           .setAuthor({ name: `${message.guild.name}`, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
           .setThumbnail(message.guild.iconURL({ dynamic: true, format: "png" }))
           .setTimestamp(Date.now())
@@ -1451,7 +1431,7 @@ client.on('messageDelete', async message => {
   var logChannel = message.guild.channels.cache.find(c => c.id === channel);  
   if(!logChannel) return;  
   let messageDelete = new MessageEmbed()  
-  .setColor(`#9784c4`)  
+  .setColor(`GREY`)  
   .setAuthor(`MessageDelete`, message.author.avatarURL({dynamic: true}))
   .setDescription(`**\n**:wastebasket: Successfully \`\`DELETE\`\` **MESSAGE** In ${message.channel}\n\n**Channel:** \`\`${message.channel.name}\`\` (ID: ${message.channel.id})\n**Message ID:** ${message.id}\n**Sent By:** <@${message.author.id}> (ID: ${message.author.id})\n**Message:**\n\`\`\`${message}\`\`\``)
   .setTimestamp()
@@ -1506,7 +1486,7 @@ client.on('messageUpdate', async (oldMessage, newMessage) => {
           let updateNickname = new MessageEmbed()
           .setTitle('Update Mmember Nickname')
           .setThumbnail('https://cdn.discordapp.com/emojis/863383470717534208.gif?size=80')
-          .setColor(`#9784c4`)
+          .setColor(`GREY`)
           .setDescription(`\n**User:** ${oldMember}\n**Old Nickname:** \`\`\`${oldNM}\`\`\`\n**New Nickname:** \`\`\`${newNM}\`\`\`\n**By:** <@${userID}>`)
           .setTimestamp()
           .setFooter(oldMember.guild.name, oldMember.guild.iconURL({dynamic: true}))
@@ -1529,7 +1509,7 @@ client.on("guildMemberRoleAdd", async(member, role) => {
             let memberavatar = discordlogs.entries.first().executor.displayAvatarURL({ dynamic: true });
   const embed4 = new MessageEmbed()
             .setTitle('Role updated')
-            .setColor('#9784c4')
+            .setColor('GREY')
             .addField('Member role add : ', `<@${member.user.id}>`)
             .addField('Role : ', `<@&${role.id}> \`${role.id}\``)
             .setTimestamp()
@@ -1548,7 +1528,7 @@ client.on("guildMemberRoleRemove", async(member, role) => {
             let memberavatar = discordlogs.entries.first().executor.displayAvatarURL({ dynamic: true });
   const embed5 = new MessageEmbed()
             .setTitle('Role updated')
-            .setColor('#9784c4')
+            .setColor('GREY')
             .addField('Member role remove : ', `<@${member.user.id}>`)
             .addField('Role : ', `<@&${role.id}> \`${role.id}\``)
             .setTimestamp()
@@ -1567,7 +1547,7 @@ client.on("guildChannelPermissionsUpdate", async(channel, oldPermissions, newPer
             const embed = new MessageEmbed()
             .setTitle('permissions updated')
             .setThumbnail(userAvatar)
-            .setColor('#9784c4')
+            .setColor('GREY')
             .addField('Channel name : ', `\`${channel.name}\` ${newPermissions}`)
             .setTimestamp()
             .addField('updated by : ', `<@${memberid}> (${memberid})`)
@@ -1585,7 +1565,7 @@ client.on("guildMemberEntered", async(member) => {
             let memberavatar = discordlogs.entries.first().executor.displayAvatarURL({ dynamic: true });
   const embed6 = new MessageEmbed()
             .setTitle('New member')
-            .setColor('#9784c4')
+            .setColor('GREY')
             .addField('Member join : ', `<@${member.user.id}> \`${member.user.id}\``)
             .addField('Account age : ', `${moment(member.user.createdAt).format(`**<t:${parseInt(member.user.createdAt / 1000)}:R>**`)}`)
             .setTimestamp()
@@ -1602,7 +1582,7 @@ client.on("guildMemberOffline", async(member, oldStatus) => {
     let userAvatar = discordlogs.entries.first().executor.displayAvatarURL({ dynamic: true });
   const embed7 = new MessageEmbed()
             .setTitle('Member status')
-            .setColor('#9784c4')
+            .setColor('GREY')
             .addField('Member : ', `<@${member.user.id}>`)
             .addField('New status : ', `Offline`)
             .setTimestamp()
@@ -1618,7 +1598,7 @@ client.on("guildMemberOnline", async(member, newStatus) => {
     let userAvatar = discordlogs.entries.first().executor.displayAvatarURL({ dynamic: true });
   const embed7 = new MessageEmbed()
             .setTitle('Member status')
-            .setColor('#9784c4')
+            .setColor('GREY')
             .addField('Member : ', `<@${member.user.id}>`)
             .addField('New status : ', `${newStatus}`)
             .addField('Old status : ', `Offline`)
@@ -1636,7 +1616,7 @@ client.on("voiceStreamingStart", async(member, voiceChannel) => {
             let memberavatar = discordlogs.entries.first().executor.displayAvatarURL({ dynamic: true });
   const embed7 = new MessageEmbed()
             .setTitle('Streaming Start')
-  .setColor(`#9784c4`)
+  .setColor(`GREY`)
             .addField('user name : ', `<@${member.id}>`)
             .addField('Voice streaming start : ', `<#${voiceChannel.id}> (${voiceChannel.name})`)
             .setTimestamp()
@@ -1652,8 +1632,8 @@ client.on("voiceStreamingStop", async(member, voiceChannel) => {
             let memberid = discordlogs.entries.first().executor.id;
             let memberavatar = discordlogs.entries.first().executor.displayAvatarURL({ dynamic: true });
   const embed7 = new MessageEmbed()
-            .setTitle('streaming stop')
-  .setColor(`#9784c4`)
+            .setTitle('Streaming stop')
+  .setColor(`GREY`)
             .addField('user name : ', `<@${member.id}>`)
             .addField('Voice streaming stop : ', `<#${voiceChannel.id}> (${voiceChannel.name})`)
             .setTimestamp()
@@ -1671,7 +1651,7 @@ client.on("voiceChannelSwitch", async(member, oldChannel, newChannel) => {
             let userAvatar = discordlogs.entries.first().executor.displayAvatarURL({ dynamic: true });
   const embed7 = new MessageEmbed()
             .setTitle('Switch Voice channel')
-            .setColor('#9784c4')
+            .setColor('GREY')
             .addField('User Move : ', `<@${member.user.id}>`)
             .addField('Old channel : ', `<#${oldChannel.id}> (${oldChannel.name})`)
             .addField('New channel : ', `<#${newChannel.id}> (${newChannel.name})`)
@@ -1687,7 +1667,7 @@ client.on("voiceChannelJoin", async(member, channel) => {
   if (!LogChannel ) return;
   const embed7 = new MessageEmbed()
             .setTitle('Join Voice Room')
-            .setColor('#9784c4')
+            .setColor('GREY')
             .addField('user name : ', `<@${member.id}>`)
             .addField('Joined voice channel : ', `<#${channel.id}> (${channel.name})`)
             .setThumbnail('https://cdn.discordapp.com/emojis/863316830633197578.gif?size=80')
@@ -1702,7 +1682,7 @@ client.on("voiceChannelLeave", async(member, channel) => {
   if (!LogChannel ) return;
   const embed7 = new MessageEmbed()
             .setTitle('Leave Voice Room')
-            .setColor('#9784c4')
+            .setColor('GREY')
             .addField('user name : ', `<@${member.id}>`)
             .addField('Left voice channel : ', `<#${channel.id}> (${channel.name})`)
             .setThumbnail('https://cdn.discordapp.com/emojis/853547756001296425.png?size=80')
@@ -1724,7 +1704,7 @@ client.on('voiceStateUpdate', async (voiceOld, voiceNew) => {
           let = serverMutev = new MessageEmbed()
           .setTitle('Voice Mute')
           .setThumbnail('https://cdn.discordapp.com/emojis/863316829715955783.gif?.size=80')
-          .setColor('#9784c4')
+          .setColor('GREY')
           .setDescription(`**User:** <@${voiceOld.id}>  \n**Channel Name :** \`\`${voiceOld.channel.name}\`\` (**Channel ** : ${voiceOld.channel})`)
           .setTimestamp()
 
@@ -1735,7 +1715,7 @@ client.on('voiceStateUpdate', async (voiceOld, voiceNew) => {
           let serverUnmutev = new MessageEmbed()
           .setTitle('Voice Unmute')
           .setThumbnail('https://cdn.discordapp.com/emojis/863316828256337920.gif?size=80')
-          .setColor('#9784c4')
+          .setColor('GREY')
           .setDescription(`**User:** <@${voiceOld.id}>  \n**Channel Name :** \`\`${voiceOld.channel.name}\`\` (**Channel ** : ${voiceOld.channel})`)
           .setTimestamp()
 
@@ -1746,7 +1726,7 @@ client.on('voiceStateUpdate', async (voiceOld, voiceNew) => {
           let serverDeafv = new MessageEmbed()
           .setTitle('VOICE DEAFEN')
           .setThumbnail('https://cdn.discordapp.com/emojis/889519299776110733.png?size=80')
-          .setColor('#9784c4')
+          .setColor('GREY')
           .setDescription(`**User:** <@${voiceOld.id}>  \n**Channel Name :** \`\`${voiceOld.channel.name}\`\` (**Channel ** : ${voiceOld.channel})`)
           .setTimestamp()
 
@@ -1757,7 +1737,7 @@ client.on('voiceStateUpdate', async (voiceOld, voiceNew) => {
           let serverUndeafv = new MessageEmbed() 
           .setTitle('Voice UnDefen')
           .setThumbnail('https://cdn.discordapp.com/emojis/889519299436359760.png?size=80')
-          .setColor('#9784c4')
+          .setColor('GREY')
           .setDescription(`**User:** <@${voiceOld.id}>  \n**Channel Name :** \`\`${voiceOld.channel.name}\`\` (**Channel ** : ${voiceOld.channel})`)
           .setTimestamp()
 
@@ -1790,7 +1770,7 @@ client.on('roleUpdate', async (oldRole, newRole) => {
           let roleUpdateName = new MessageEmbed()
           .setAuthor('Role Name Update',userAvatar)  
           .setThumbnail('https://cdn.discordapp.com/emojis/854132515979919380.png?size=80')  
-          .setColor(`#9784c4`)
+          .setColor(`GREY`)
           .setDescription(`\n **Info Of User:** \`\`\`UpdateBy: ${usertag} \nUserID: ${userID}\`\`\`
       **Info Of Role:** \`\`\`OldName: ${oldRole.name}\nNewRoleName: ${newRole.name}\nRoleID: ${oldRole.id}\`\`\``)
           .setTimestamp()
@@ -1812,7 +1792,7 @@ client.on('roleUpdate', async (oldRole, newRole) => {
           let roleUpdateColor = new MessageEmbed()  
           .setTitle('Role Color Update', userAvatar)  
           .setThumbnail('https://cdn.discordapp.com/emojis/911385098413281300.png?size=80')  
-          .setColor(`#9784c4`)
+          .setColor(`GREY`)
           .setDescription(`\n **Info Of User:** \`\`\`UpdateBy: ${usertag} \nUserID: ${userID}\`\`\`
       **Info Of Role:** \`\`\`RoleName: ${oldRole.name}\nOldColor: ${oldColor}\nNewColor: ${newColor}\nRoleID: ${oldRole.id}\`\`\``)
           .setTimestamp()  
@@ -1827,7 +1807,7 @@ client.on('guildBanAdd', async(guild, user) => {
     var logChannel = guild.channels.cache.find(c => c.id === channelss); 
     if(!logChannel) return;
   let embed = new MessageEmbed()
-  .setColor(`#9784c4`)
+  .setColor(`GREY`)
   .setTitle('New User Banned')
   .setThumbnail('https://cdn.discordapp.com/emojis/888952938800762950.png?size=80')
   .setDescription(`** Successfully Banned User:** \`\`\`${user.tag}\`\`\` `)
@@ -1840,7 +1820,7 @@ client.on('guildBanAdd', async(guild, user) => {
     var logChannel = guild.channels.cache.find(c => c.id === channelss); 
     if(!logChannel) return;
   let embed = new MessageEmbed()
-  .setColor(`#9784c4`)
+  .setColor(`GREY`)
   .setTitle('New User UnBanned')
   .setThumbnail('https://cdn.discordapp.com/emojis/863372572010479637.gif?size=80')
   .setDescription(`** Successfully Unbanned From:** \`\`\`${user.tag}\`\`\` `)
@@ -1862,7 +1842,7 @@ client.on('guildBanAdd', async(guild, user) => {
         let unBanInfo = new MessageEmbed()
         .setTitle('UnBanned')
         .setThumbnail('https://cdn.discordapp.com/emojis/863372572010479637.gif?size=80')
-        .setColor(`#9784c4`)
+        .setColor(`GREY`)
         .setDescription(`\n**User:** ${user.username}\n**By:** <@${userID}> (ID: ${userID})`)
         .setTimestamp()
         .setFooter(guild.name, guild.iconURL({dynamic: true}))
@@ -1888,7 +1868,7 @@ client.on('roleCreate',async role => {
       .setThumbnail('https://cdn.discordapp.com/emojis/853547759269576715.png?size=80')  
       .setDescription(`\n **Info Of User:** \`\`\`CreatedBy: ${usertag} \nUserID: ${userID}\`\`\`
       **Info Of Role:** \`\`\`RoleName: ${role.name}\nRoleID: ${role.id}\`\`\``)
-      .setColor(`#9784c4`)
+      .setColor(`GREY`)
       .setTimestamp()
       .setFooter(role.guild.name, role.guild.iconURL({dynamic: true}))  
  
@@ -1913,7 +1893,7 @@ client.on('roleDelete', async role => {
       .setThumbnail(`https://cdn.discordapp.com/emojis/863383452791734272.gif?size=80`)  
       .setDescription(`\n **Info Of User:** \`\`\`DeletedBy: ${usertag} \nUserID: ${userID}\`\`\`
       **Info Of Role:** \`\`\`RoleName: ${role.name}\nRoleID: ${role.id}\`\`\``)
-      .setColor(`#9784c4`)
+      .setColor(`GREY`)
       .setTimestamp()  
       .setFooter(role.guild.name, role.guild.iconURL)
 
@@ -1932,7 +1912,7 @@ client.on("messagePinned", async(message) => {
             let memberavatar = discordlogs.entries.first().executor.displayAvatarURL({ dynamic: true });
   const embed7 = new MessageEmbed()
             .setTitle('Message pinned')
-            .setColor('#9784c4')
+            .setColor('GREY')
             .addField('Message : ', `${message} | [JumpToMessage](https://discord.com/channels/${message.guild.id}/${message.channel.id}/${message.id})`)
             .addField('Pinned by : ', `<@${memberid}>`)
             .setTimestamp()
@@ -1950,7 +1930,7 @@ client.on("messagePinned", async(message) => {
               let memberavatar = discordlogs.entries.first().executor.displayAvatarURL({ dynamic: true });
     const embed7 = new MessageEmbed()
               .setTitle('Message edited')
-              .setColor('#9784c4')
+              .setColor('GREY')
               .addField('Old message : ', `\`\`\`${oldContent}\`\`\``)
               .addField('New message : ', `\`\`\`${newContent}\`\`\` 
               [JumpToMessage](https://discord.com/channels/${message.guild.id}/${message.channel.id}/${message.id})`)
@@ -1985,7 +1965,7 @@ client.on('channelCreate', async (channel) => {
       .setThumbnail('https://cdn.discordapp.com/emojis/872432417758121984.png?size=80')
       .setDescription(`        **\n**:white_check_mark: Successfully \`\`CREATE\`\` **${roomType}** channel.\n\n**Channel Name:** \`\`${channel.name}\`\` (ID: ${channel.id})\n**By:** <@${userID}> (ID: ${userID})
       `)
-      .setColor(`#9784c4`)
+      .setColor(`GREY`)
       .setTimestamp()
       .setFooter(channel.guild.name, channel.guild.iconURL({dynamic: true}))
 
@@ -2018,7 +1998,7 @@ client.on('channelDelete',  async channel => {
       .setThumbnail(userAvatar) 
       .setDescription(`                **\n**:white_check_mark: Successfully \`\`DELETE\`\` **${roomType}** channel.\n\n**Channel Name:** \`\`${channel.name}\`\` (ID: ${channel.id})\n**By:** <@${userID}> (ID: ${userID})
       `)
-      .setColor(`#9784c4`)
+      .setColor(`GREY`)
       .setTimestamp()
       .setFooter(channel.guild.name, channel.guild.iconURL)
 
@@ -2050,7 +2030,7 @@ client.on('channelUpdate', async (oldChannel, newChannel) => {
           let newName = new MessageEmbed()
           .setTitle('CHANNEL EDIT')
           .setThumbnail(userAvatar)
-          .setColor(`#9784c4`)
+          .setColor(`GREY`)
           .setDescription(`
             **\n**:wrench: Successfully Edited **${channelType}** Channel Name\n\n**Old Name:** \`\`${oldChannel.name}\`\`\n**New Name:** \`\`${newChannel.name}\`\`\n**Channel ID:** ${oldChannel.id}\n**By:** <@${userID}> (ID: ${userID})`)
           .setTimestamp() 
@@ -2062,7 +2042,7 @@ client.on('channelUpdate', async (oldChannel, newChannel) => {
         let newTopic = new MessageEmbed() 
           .setTitle('CHANNEL EDIT') 
           .setThumbnail(userAvatar)
-          .setColor(`#9784c4`)
+          .setColor(`GREY`)
           .setDescription(`**\n**:wrench: Successfully Edited **${channelType}** Channel Topic\n\n**Old Topic:**\n\`\`\`${oldChannel.topic || 'NULL'}\`\`\`\n**New Topic:**\n\`\`\`${newChannel.topic || 'NULL'}\`\`\`\n**Channel:** ${oldChannel} (ID: ${oldChannel.id})\n**By:** <@${userID}> (ID: ${userID})`)
           .setTimestamp()
           .setFooter(oldChannel.guild.name, oldChannel.guild.iconURL)
@@ -2080,7 +2060,7 @@ if(!logChannel) return;
 let leaveMember = new MessageEmbed()
 .setTitle('New Mmember Leave Lol')
 .setThumbnail('https://cdn.discordapp.com/emojis/863496676621549569.gif?size=80')
-.setColor(`#9784c4`)
+.setColor(`GREY`)
 .setDescription(`Leave **${member.user.username}** From the server.!\n**Joined Discord: ${Days(member.user.createdAt)},(<t:${parseInt(member.user.createdAt / 1000)}:R>)**
 \`\`\`User: ${member.user.tag}\nUserID: ${member.user.id}\n\`\`\` `)
 .setTimestamp() 
@@ -2391,7 +2371,7 @@ let win = [
             let an = win[Math.floor(Math.random() * win.length)];
 
   var embed = new MessageEmbed()
-  .setColor("#9784c4")
+  .setColor("GREY")
   .setDescription(`${an}`)
  badboy.channel.send({ embeds: [embed] })
   }
@@ -2452,7 +2432,7 @@ cmd = args.shift().toLowerCase()
     let xp = db.fetch(`${msg.guild.id}_${msg.author.id}.xp`);
     let total = db.fetch(`${msg.guild.id}_${msg.author.id}.xptotal`);
     let embed = new MessageEmbed()
-    .setColor("#9784c4")
+    .setColor("GREY")
     .setTitle(`${user.username}'s Rank`)
     .addField('Level :', `${level}`, true)
     .addField('xp :', `${xp}`, true)
@@ -2466,7 +2446,7 @@ const simplydjs = require("simply-djs");
 client.on('messageCreate' , message =>{
   if(message.content.startsWith(prefix+'calculator')){
   simplydjs.calculator(message, {
-    embedColor: "#9784c4",
+    embedColor: "GREY",
   });
     }
   }) 
@@ -2486,7 +2466,7 @@ client.on('messageCreate' , message =>{
       let banInfo = new MessageEmbed()
         .setTitle("**[BANNED]**")
         .setThumbnail(userAvatar)
-        .setColor("#9784c4")
+        .setColor("GREY")
         .setDescription(
           `**\n**:airplane: Successfully \`\`BANNED\`\` **${user.username}** From the server!\n\n**User:** <@${user.id}> (ID: ${user.id})\n**By:** <@${userID}> (ID: ${userID})`
         )
@@ -2522,7 +2502,7 @@ const Netflix = new MessageEmbed()
 .setTitle('To see your search on Netflix, click here',message.author.displayAvatarURL())
 .setURL(`https://www.netflix.com/search?q=${args}`)
 .setFooter(message.guild.name,message.guild.iconURL())
-.setColor("#9784c4") 
+.setColor("GREY") 
 
 message.channel.send({embeds :[Netflix]})
 }});
@@ -2554,7 +2534,7 @@ client.on('messageCreate', async message => {
           return i.jwab.some(answer => answer.toLowerCase() === s.content.toLowerCase());
       };
       let embed = new MessageEmbed()
-      .setColor("#9784c4")
+      .setColor("GREY")
       .setImage(i.youtuber)
       .setDescription(`**خمن من في الصورة**`)
       .setFooter({ text:'عندك 15 ثانيه'});
@@ -2591,7 +2571,7 @@ client.on('messageCreate', async message => {
           return i.jwab.some(answer => answer.toLowerCase() === s.content.toLowerCase());
       };
       let embed = new MessageEmbed()
-      .setColor("#9784c4")
+      .setColor("GREY")
       .setImage(i.youtuber)
       .setDescription(`**ما هي هذه الدوله؟**`)
       .setFooter({ text:'عندك 15 ثانيه'});
@@ -2624,7 +2604,7 @@ client.on("messageCreate", message => {
  let login = new MessageEmbed()
  .setAuthor(message.guild.name, message.guild.iconURL())
       .setTimestamp()
-      .setColor("#9784c4")
+      .setColor("GREY")
       .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
       .setTitle(`Login`)
       .setDescription(`You have login in successfully!`)
@@ -2645,7 +2625,7 @@ client.on("messageCreate", message => {
     
  let logout = new MessageEmbed()
       .setTimestamp()
-      .setColor("#9784c4")
+      .setColor("GREY")
       .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
       .setTitle(`You've logged out successfully!`)
         .setDescription(`Bye 👋`)
@@ -2705,7 +2685,7 @@ client.on("messageCreate", message => {
       { name: `**كود الدعوة**`, value: `${invite.code}`}
     )
     .setThumbnail(member.user.avatarURL())
-    .setColor("#9784c4")
+    .setColor("GREY")
     .setTimestamp()
     if(oqdl) await oqdl.send({embeds: [Embed]})
   })
@@ -2714,7 +2694,7 @@ const chanenl = '982184707640950785'
 client.on('messageCreate', D7M => {
 if (D7M.author.bot) return;
 if(D7M.channel.id != chanenl) return; 
-D7M.channel.send({content : "https://cdn.discordapp.com/attachments/790515111752237067/980111928930230352/unknown.png"})
+D7M.channel.send({content : "https://cdn.discordapp.com/attachments/790515111752237067/1007278477461958667/unknown-3.png"})
 })
 
 
@@ -2775,13 +2755,13 @@ client.on("messageCreate" , message => {
     new MessageButton()
     .setCustomId("apply")
     .setLabel("Submit")
-    .setStyle("PRIMARY")
+    .setStyle("SECONDARY")
     )
     let embed = new MessageEmbed()
     .setAuthor({name:message.guild.name , iconUrl :message.guild.iconURL()})
     .setTitle("**Application : <:880802572695384125:984423822839140422>**")
     .setDescription("** Click The Button To Show The Application Form To You**") .setImage("https://cdn.discordapp.com/attachments/866771627127734334/981501092191932517/unknown.png")
-    .setColor("BLURPLE")
+    .setColor("GREY")
     message.delete()
     message.channel.send({components:[row] , embeds:[embed]})
   }
@@ -2980,7 +2960,7 @@ if (message.content.startsWith(prefix + "timeout")) {
     const notime = new MessageEmbed()
     .setAuthor(`${message.author.tag}` , message.author.avatarURL({dynamic : true}))
     .setTitle(`Command: timeout`)
-    .setColor("#9784c4")
+    .setColor("GREY")
     .setDescription(`Timeout a member.
 
     **Usage:**
@@ -3012,7 +2992,7 @@ if (message.content.startsWith(prefix + "timeout")) {
       .setAuthor(member.user.tag, member.user.displayAvatarURL({ dynamic: true }))
       .setDescription(`> **You are timeout in** \`${message.guild.name}\` **for a ${args[2]}**\n> **timeout By : **${message.author}`)
       .setThumbnail(message.guild.iconURL())
-      .setColor("#9784c4")
+      .setColor("GREY")
       .setFooter(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
     await member.timeout(ms(args[2]))
     await message.reply(`**${message.author.tag}** Timeouted **${member.user.username}** for **${args[2]}**`)
@@ -3054,12 +3034,12 @@ client.on("messageCreate",async message => {
   let time = ms(timeout - (Date.now() - daily));
   
   let timeEmbed = new MessageEmbed()
-  .setColor("#9784c4")
+  .setColor("GREY")
   .setDescription(`You can collect your daily again in ${time}.`);
   message.reply({ embeds: [timeEmbed], allowedMentions: { repliedUser: false } })
   } else {
   let moneyEmbed = new MessageEmbed()
-  .setColor("#9784c4")
+  .setColor("GREY")
   .setDescription(`You've collected your ${amount} from daily.`);
   message.reply({ embeds: [moneyEmbed], allowedMentions: { repliedUser: false } })
   db.add(`money_${user.user.id}`, amount)
@@ -3086,7 +3066,7 @@ if (message.content.startsWith(prefix + 'balance')) {
   if (user) {
   
   let embed = new MessageEmbed()
-  .setColor("#9784c4")
+  .setColor("GREY")
   .setDescription(
   `${user.user.username}'s Balance\n\nPocket: \`${bal}\``
   )
@@ -3104,7 +3084,7 @@ if (message.content.startsWith(prefix + 'top')) {
   if (!money.length) {
   let noEmbed = new MessageEmbed()
   .setAuthor(message.member.displayName, message.author.displayAvatarURL())
-  .setColor("#9784c4")
+  .setColor("GREY")
   .setFooter("What do you think to get your daily?")
   return message.reply({ embeds: [noEmbed], allowedMentions: { repliedUser: false } })
   };
@@ -3121,7 +3101,7 @@ if (message.content.startsWith(prefix + 'top')) {
   
   const embed = new MessageEmbed()
   .setTitle(`Leaderboard Of ${message.guild.name}`)
-  .setColor("#9784c4")
+  .setColor("GREY")
   .setDescription(finalLb)
   .setFooter(client.user.tag, client.user.displayAvatarURL())
   .setTimestamp()
@@ -3168,7 +3148,7 @@ let ring = db.fetch(`ring_${user.id}`);
 if (ring === null) ring = 0;
 */
 const embed = new MessageEmbed()
-.setColor(`#9784c4`)
+.setColor(`GREY`)
 .setDescription(`> User: ${user} | ${user.user.tag} | ${user.id}\n> Money: ${money}\n`)
 
 message.reply({ embeds: [embed], allowedMentions: { repliedUser: false } })
@@ -3176,18 +3156,7 @@ message.reply({ embeds: [embed], allowedMentions: { repliedUser: false } })
 }}
 
 );
-client.on('guildMemberRemove', async Member => {
-  let ChannelLog = await Member.guild.channels.cache.find(Channel => Channel.id === '982189183080730634')
-  if(!ChannelLog) return;
 
-  let Embed = new EmbedBuilder()
-     .setAuthor({ name: Member.user.tag, iconURL: Member.user.displayAvatarURL({ dynamic: true }) })
-     .setThumbnail(Member.user.displayAvatarURL({ dynamic: true }))
-     .setColor(`WHITE`) 
-     .setDescription(`${Member} has been Leaved Server!`)
-     .addFields({ name: 'Member ID', value: Member.id, inline: true }, { name: 'Member URL', value: `[Add Member](https://www.discord.com/users/${Member.id}) ● [Message Member](https://discord.com/channels/@me/${Member.id})`, inline: true })
-  ChannelLog.send({ embeds: [Embed] })
-})
 
 
 const { QuickDB } = require('quick.db')
@@ -3226,7 +3195,7 @@ client.on('messageCreate',async (messsage) => {
     });
     if(messsage.content === prefix + 'send') {
         let embed = new MessageEmbed()
-        .setColor(`WHITE`)
+        .setColor(`GREY`)
         embed.setDescription(`${passwords}`)
         await messsage.author.send({embeds : [embed]}).then(async () => {
             await messsage.channel.send({content : 'done'});
@@ -3235,7 +3204,7 @@ client.on('messageCreate',async (messsage) => {
         })
     }
 })
-
+/*
 
 
 client.on('messageCreate', async message => {
@@ -3284,4 +3253,15 @@ client.on('interactionCreate', async interaction => {
       interaction.reply({ content: 'لقد تم اعطائك رول', ephemeral: true })
   }
 });
+*/
+
+
+
+
+
+
+
+
+
+
   client.login(TOKEN);

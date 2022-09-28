@@ -10,7 +10,7 @@ module.exports = {
         
         let args = message.content.split(' ').slice(1);
         
-        if (!args[0]) return message.reply({ embeds: [new MessageEmbed()      .setColor('WHITE')
+        if (!args[0]) return message.reply({ embeds: [new MessageEmbed()      .setColor('GREY')
 
           .setDescription(`**Command: ban**\n\nBans a member.\n\n**Usage:**\n\n\#ban\  \[user]\ \(time m/h/d/mo/y) (reason)\n\n \**Examples:**\n \#ban <@${message.author.id}>\n #ban <@${message.author.id}> 1h spamming\n #ban <@${message.author.id}> 1d spamming\n #ban <@${message.author.id}> 1w`)] })
         

@@ -9,9 +9,9 @@ module.exports = {
       if(!Message.member.permissions.has('ADMINISTRATOR')) return;  
          const target = Message.mentions.users.first();
          if(target){
-             let mainrole= Message.guild.roles.cache.find(roles => roles.id === '980870419265507408');//هنا حط ايدي رتبة الميوت
-             let mainrole2= Message.guild.roles.cache.find(roles => roles.id === '980870419265507408');
-             let muterole3= Message.guild.roles.cache.find(roles => roles.id === '980870419265507408');
+             let mainrole= Message.guild.roles.cache.find(roles => roles.id === '982202081916100618');//هنا حط ايدي رتبة الميوت
+             let mainrole2= Message.guild.roles.cache.find(roles => roles.id === '982202081916100618');
+             let muterole3= Message.guild.roles.cache.find(roles => roles.id === '982202081916100618');
 
              let memberTarget = Message.guild.members.cache.get(target.id);
 
@@ -32,7 +32,7 @@ module.exports = {
                 Message.channel.send(`<@${memberTarget.user.id}> has been unmuted`);
              },ms(args[1]));
          }else{
-            Message.channel.send({ embeds: [new MessageEmbed()      .setColor('#9784c4')
+            Message.channel.send({ embeds: [new MessageEmbed()      .setColor('GREY')
             .setDescription(`**Command: unmute**\n\nUnmute a member./voice channels so they cannot type.\n\n**Usage:**\n\n\`#unmute\` \`[user]\``)] })
          }
     } 

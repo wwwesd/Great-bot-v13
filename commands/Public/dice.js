@@ -27,7 +27,7 @@ module.exports = {
         .setFooter(message.author.username, message.author.avatarURL({ dynamic: true }))
         .setThumbnail(message.guild.iconURL({ dynamic: true }))
         .setTimestamp()
-        .setColor("WHITE")
+        .setColor("GREY")
   
       message.channel.send({ embeds: [embed] })
     }

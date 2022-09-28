@@ -14,9 +14,9 @@ if(!reason) return message.channel.send(`${PREFIX} + report { منشن الشخ�
 message.delete()
 message.channel.send("  تم ارسال بلاغك بنجاح ✅ ")//الرسالة اذا حذف الرابط
 // logs 
-let reportschannel = client.channels.cache.get('951580918190055495')//////ايدي روم الوق
+let reportschannel = client.channels.cache.get('982201354753802251')//////ايدي روم الوق
 let embedmsg = new MessageEmbed() /// !  
-.setColor("#9784c4")
+.setColor("GREY")
 .setTitle(" report : ")
 .setThumbnail(message.author.avatarURL)
 .setDescription(`

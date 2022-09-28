@@ -29,9 +29,9 @@ module.exports = {
         )
 
         let embed = new MessageEmbed()
-      .setTitle('Brown Server')
+      .setTitle('Great Server')
 
-      .setColor('WHITE')
+      .setColor('GREY')
 
       .setDescription(`**
         Take The Role

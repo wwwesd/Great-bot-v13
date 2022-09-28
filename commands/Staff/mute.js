@@ -25,7 +25,7 @@ async execute(client, message, args) {
       
             await message.guild.roles.create({
                name : 'Muted',
-               color: 'WHITE'
+               color: 'GREY'
              }).then(async() => {
                await message.guild.channels.cache.forEach((channel) => { 
                  channel.permissionOverwrites.edit(mutedrole, {

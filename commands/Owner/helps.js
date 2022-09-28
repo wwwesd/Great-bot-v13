@@ -53,7 +53,7 @@ module.exports = {
         let embed = new MessageEmbed()
             .setTitle("Help Panel")
             .setAuthor({ name: `${message.guild.name}`, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
-            .setColor("WHITE")
+            .setColor("GREY")
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
             .setDescription(`**Hey ${message.author.username} , iam <@982199803272388659>
@@ -71,14 +71,14 @@ module.exports = {
             > ✨ Select A Category From The Menu 
                         **`)
            
-            .setFooter({ text: "Brown" })
-            .setImage("https://media.discordapp.net/attachments/790515111752237067/992828427600150548/unknown-7.png?width=454&height=266")
+            .setFooter({ text: "Great." })
+            .setImage("https://cdn.discordapp.com/attachments/991754431316115568/1007265964603224104/unknown-1.png")
 
             
 
 
         const btn1 = new MessageButton()
-            .setLabel("Brown Server")
+            .setLabel("Great Server")
             .setStyle("LINK")
             .setURL("https://discord.gg/AqQJKse6qp")
 
@@ -126,13 +126,15 @@ module.exports = {
             > \`#balance\`:**لمعرفة كم لديك في البنك **
             > \`#daily\`: **لاخذ راتبك اليومي**
             > \`#pbank\`: **يظهر لك معلوماتك في البنك**
+            > \`#send\`: **يرسل لك كلمة سر في الخاص**
+
 
 
 
   `)
-            .setColor("WHITE")
+            .setColor("GREY")
             .setAuthor({ name: `${message.guild.name}`, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
-            .setColor("WHITE")
+            .setColor("GREY")
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
 
@@ -183,11 +185,15 @@ module.exports = {
             > \`#voicemute\`: **لاعطاء ميوت لجميع الموجودين في الروم**
             > \`#voiceundeaf\`: **لفك الديفن لجميع الموجودين في الروم**
             > \`#voiceunmute\`: **لفك الميوت لجميع الموجودين في الروم**
+            > \`#antibots on\`: **لتشغيل الحماية من البوتات**
+            > \`#antibots off\`: **لايقاف حمايه البوتات**
+
+
             
             `)
-            .setColor("WHITE")
+            .setColor("GREY")
             .setAuthor({ name: `${message.guild.name}`, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
-            .setColor("WHITE")
+            .setColor("GREY")
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
 
@@ -209,9 +215,9 @@ module.exports = {
 
 
   `)
-            .setColor("WHITE")
+            .setColor("GREY")
             .setAuthor({ name: `${message.guild.name}`, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
-            .setColor("WHITE")
+            .setColor("GREY")
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
 
@@ -224,9 +230,9 @@ module.exports = {
             > \`/delete\`: **لحذف التكت**
             > \`/rename\`: **لتغيير اسم التكت**
 `)
-            .setColor("WHITE")
+            .setColor("GREY")
             .setAuthor({ name: `${message.guild.name}`, iconURL: client.user.displayAvatarURL({ dynamic: true }) })
-            .setColor("WHITE")
+            .setColor("GREY")
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
             .setTimestamp()
 

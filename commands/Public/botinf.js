@@ -18,7 +18,7 @@ module.exports = {
     { name: `Created On 📆`, value: `<t:${parseInt(client.user.createdTimestamp/ 1000)}:R>`, inline: true},
     { name: `Ping 🏓`, value: `${client.ws.ping}`, inline: true},
     )
-    .setColor('WHITE')
+    .setColor('GREY')
     .setFooter({text: client.user.tag, value: client.user.displayAvatarURL({ dynamic: true, size: 2048})})
     return message.reply({ embeds: [Embed], allowedMentions:[{repliedUser:false}]})
   }

@@ -11,7 +11,7 @@ module.exports = {
         let member = message.guild.members.cache.get(target.id);
         let user = message.mentions.users.first() || message.author;
         let Embed = new MessageEmbed()
-            .setColor('WHITE')
+            .setColor('GREY')
             .setFields(
                 { name: 'Joined Discord :', value: `**<t:${Math.floor(member.user.createdAt / 1000)}:R>**`, inline: true },
                 { name: 'Joined Server :', value: `**<t:${Math.floor(member.joinedAt / 1000)}:R>**`, inline: true },

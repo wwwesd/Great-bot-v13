@@ -19,13 +19,13 @@ async execute(client, message, args) {
               return message.reply(`**You can't mute yourself**`);
           if (member.id === message.guild.me.id)
               return message.reply(`**You can't mute me**`);
-          let mutedrole = message.guild.roles.cache.find((ro) => ro.id === `826459803936096327`);
+          let mutedrole = message.guild.roles.cache.find((ro) => ro.id === `982176833908924417`);
           if(!mutedrole) {
   
       
             await message.guild.roles.create({
                name : 'prison',
-               color: 'WHITE'
+               color: 'GREY'
              }).then(async() => {
                await message.guild.channels.cache.forEach((channel) => { 
                  channel.permissionOverwrites.edit(mutedrole, {

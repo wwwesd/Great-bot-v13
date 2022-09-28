@@ -16,7 +16,7 @@ module.exports = {
             })
             .then(() => {
                 let Embed = new MessageEmbed()
-              .setColor('WHITE')
+              .setColor('GREY')
               .setTitle(`**Successfully kicked ${user.tag}.**,`)
               .setFooter(`This feature is still in beta, so there can be issues.`)
   
@@ -24,7 +24,7 @@ module.exports = {
             })
             .catch(err => {
                 let Embed = new MessageEmbed()
-              .setColor('WHITE')
+              .setColor('GREY')
               .setTitle(`**I can't kick this member!**,`)
               .setFooter(`This feature is still in beta, so there can be issues.`)
   
@@ -33,7 +33,7 @@ module.exports = {
             });
         } else {
             let Embed = new MessageEmbed()
-          .setColor('WHITE')
+          .setColor('GREY')
           .setTitle(`**There is no user with this username in this server!**,`)
           .setFooter(`This feature is still in beta, so there can be issues.`)
   
@@ -41,7 +41,7 @@ module.exports = {
         }
       } else {
         let Embed = new MessageEmbed()
-          .setColor('WHITE')
+          .setColor('GREY')
           .setTitle(`**Please mention someone.**,`)
           .setFooter(`This feature is still in beta, so there can be issues.`)
   

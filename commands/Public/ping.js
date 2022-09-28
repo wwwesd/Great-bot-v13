@@ -21,7 +21,7 @@ var states = "🟢 Excellent";
                 .addField("**Time Taken:**", msg + " ms 📶 | " + states, true)
                 .addField("**WebSocket:**", api + " ms 📶 | " + states2, true)
                 .setTimestamp()
-                .setColor('WHITE')
+                .setColor('GREY')
                     message.reply({ embeds: [embed], allowedMentions: [{repliedUser: false}] }).catch(console.log);
 } 
 }

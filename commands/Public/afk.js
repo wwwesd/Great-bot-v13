@@ -8,7 +8,7 @@ module.exports = {
 
         let embed = new MessageEmbed()
         .setTitle('Server Afk')
-        .setColor('WHITE')
+        .setColor('GREY')
         .setDescription(`
         > **The Afk Rooms is :**
         
@@ -16,7 +16,7 @@ module.exports = {
         `)
         .setFooter(message.guild.name, message.guild.iconURL({dynamic: true})) 
         .setTimestamp()
-        .setColor("WHITE")
+        .setColor("GREY")
         message.channel.send({ embeds: [embed]}).then(msg => {msg.react("😴") })
 
     }
